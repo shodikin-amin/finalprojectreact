@@ -2,7 +2,7 @@ import React from 'react'
 
 const InputButton = (props) => {
   return (
-    <button>
+    <button className="text-3xl font-bold underline">
         {props.name}
     </button>
   )
