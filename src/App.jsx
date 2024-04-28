@@ -3,11 +3,13 @@ import Hero from "./components/molecules/Hero";
 function App() {
   return (
     <>
-      <div className="bg-hijau1">
+      <div className="absolute w-screen bg-hijau1">
         <Nav />
       </div>
       ,
-      <Hero />
+      <div>
+        <Hero />
+      </div>
     </>
   );
 }
