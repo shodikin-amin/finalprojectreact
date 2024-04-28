@@ -1,11 +1,15 @@
-import { useState } from 'react'
-
+import Nav from "./components/molecules/Nav";
+import Hero from "./components/molecules/Hero";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-<div>App</div>
-  )
+    <>
+      <div className="bg-hijau1">
+        <Nav />
+      </div>
+      ,
+      <Hero />
+    </>
+  );
 }
 
-export default App
+export default App;
