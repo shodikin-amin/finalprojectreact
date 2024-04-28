@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import RegisterLayout from "./layout/RegisterLayout.jsx";
 import LoginPage from "./pages/Login.jsx";
+import RegisterPage from "./pages/Register.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/register",
-    element: <RegisterLayout />,
+    element: <RegisterPage />,
   },
   {
     path: "/login",
