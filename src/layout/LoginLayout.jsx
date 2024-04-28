@@ -11,7 +11,10 @@ function LoginLayout() {
           <FormLoginFragment />
           <p className="mt-2 text-center text-sm text-gray-500">
             Belum Punya Akun?{" "}
-            <a href="#" className="font-semibold text-blue-600 hover:text-md hover:font-bold">
+            <a
+              href="#"
+              className="font-semibold text-blue-600 hover:text-md hover:font-bold"
+            >
               Daftar
             </a>
           </p>
