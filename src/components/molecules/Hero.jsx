@@ -7,7 +7,7 @@ const Hero = () => {
             <p className="text-xl">Peserta Didik Baru Tahun Pelajaran 2024</p>
         </div>
         <div className="text-center" >
-            <button className="bg-orange-500 px-4 py-2 mt-4 rounded-lg text-lg font-semibold text-decoration-none">Daftar Sekarang</button>
+            <button className="bg-orange-500 px-4 py-2 mt-4 rounded-lg text-lg font-semibold text-decoration-none hover:bg-opacity-80">Daftar Sekarang</button>
         </div>
     </div>
   )
