@@ -1,7 +1,15 @@
 import InputFormLabel from "../components/atoms/Input/index";
 import IndexButton from "../components/atoms/Button";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const FormLoginFragment = () => {
+  const [title, setTitle] = useState("Login");
+
+  useEffect(() => {
+    document.title = title;
+  }, [setTitle]);
+
   const dataInput = [
     {
       label: "Email",
@@ -19,24 +27,15 @@ const FormLoginFragment = () => {
   return (
     <form>
       {dataInput.map((input, index) => (
-        <InputFormLabel
-          key={index}
-          label={input.label}
-          name={input.name}
-          placeholder={input.placeholder}
-          type={input.type}
-        />
+        <InputFormLabel key={index} label={input.label} name={input.name} placeholder={input.placeholder} type={input.type} />
       ))}
       <div className="text-sm text-end my-2">
-        <a
-          href="#"
-          className="font-semibold text-blue-600 hover:text-md hover:font-bold"
-        >
+        <Link to="/reset-password" className="font-semibold text-blue-600 hover:text-md hover:font-bold">
           Lupa password?
-        </a>
+        </Link>
       </div>
       <div>
-        <IndexButton name="Sign in" />
+        <IndexButton name="Login" />
       </div>
     </form>
   );
