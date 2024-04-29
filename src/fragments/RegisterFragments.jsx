@@ -3,6 +3,7 @@ import InputFormLabel from "../components/atoms/Input";
 import IndexButton from "../components/atoms/Button";
 import { Result } from "antd";
 import RegisterContainer from "../components/molecules/RegisterContainer";
+import { Link } from "react-router-dom";
 
 const RegisterFragments = () => {
   const [formData, setFormData] = useState({
@@ -83,14 +84,22 @@ const RegisterFragments = () => {
   return (
     <>
       {isSuccess ? (
-        <>
+        <div className="flex flex-col">
           <Result
             status="success"
             title="Pendaftaran Berhasil!"
             subTitle="Data Anda telah berhasil terkirim."
           />
-          <IndexButton type="button" name="Home" />
-        </>
+          <p className="pt-2 mt-2 text-center text-sm text-gray-500">
+                Kembali ke{" "}
+                <Link
+                  to="/"
+                  className="font-semibold text-blue-600 hover:text-md hover:font-bold"
+                >
+                  Home
+                </Link>
+              </p>
+        </div>
       ) : (
         <div className="flex space-x-10">
           <RegisterContainer />
@@ -109,9 +118,17 @@ const RegisterFragments = () => {
                 onChange={handleChange}
               />
             ))}
-            <div className="flex justify-center space-x-10 px-4 md:px-0">
-              <IndexButton type="button" name="Home" />
+            <div className="flex flex-col justify-center space-x-10 px-4 md:px-0">
               <IndexButton type="submit" name="Daftar" />
+              <p className="pt-2 mt-2 text-center text-sm text-gray-500">
+                atau ke halaman{" "}
+                <Link
+                  to="/"
+                  className="font-semibold text-blue-600 hover:text-md hover:font-bold"
+                >
+                  Home
+                </Link>
+              </p>
             </div>
           </form>
         </div>
