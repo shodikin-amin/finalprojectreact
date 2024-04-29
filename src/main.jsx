@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginPage from "./pages/Login.jsx";
 import RegisterPage from "./pages/Register.jsx";
 import BurgerMenu from "./pages/BurgerMenu.jsx";
+import RegisterAccountPage from "./pages/RegisterAccount.jsx";
+import ResetPasswordPage from "./pages/ResetPassword.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,12 +15,20 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/register",
+    path: "/pendaftaran",
     element: <RegisterPage />,
   },
   {
     path: "/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/register",
+    element: <RegisterAccountPage />,
+  },
+  {
+    path: "/reset-password",
+    element: <ResetPasswordPage />,
   },
   {
     path: "/menu",
