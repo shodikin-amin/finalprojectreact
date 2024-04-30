@@ -31,7 +31,7 @@ const Nav = () => {
               Profil
             </li>
           </Link>
-          <Link spy={true} smooth={true} to="">
+          <Link spy={true} smooth={true} to=".\src\layout\RegisterLayout.jsx">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               {" "}
               Pendaftaran
@@ -45,7 +45,6 @@ const Nav = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-hijau1txt lg:py-5 px-20 py-4">
         <div className="flex items-center flex-0">
-          {/* <span className="text-3xl font-bold">Logo</span> */}
           <Link to="">
             <img
               className="w-[3em]"
@@ -75,7 +74,7 @@ const Nav = () => {
                   Profil
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="">
+              <Link spy={true} smooth={true} to="/register">
                 <li className="hover:text-hovertxt transition hover:border-b-2 border-primetxt hover:border-hovertxt hover:font-medium cursor-pointer">
                   {" "}
                   Pendaftaran
@@ -86,9 +85,8 @@ const Nav = () => {
         </div>
         <div className="flex gap-4">
           {click && content}
-
-          <button className="hidden sm:block transition">{click ? <FaSearch/> : <FaSearch size={25} />}</button>
-          <button className="hidden sm:block transition">{click ? <VscAccount /> : <VscAccount size={25} />}</button>
+          <button>{click ? <FaSearch /> : <FaSearch size={25} />}</button>
+          <button>{click ? <VscAccount /> : <VscAccount size={25} />}</button>
           <button className="block md:hidden transition" onClick={handleClick}>
             {click ? <FaTimes /> : <CiMenuFries size={25} />}
           </button>
