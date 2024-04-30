@@ -4,6 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
+import React from "react";
 
 const Nav = () => {
   const [click, setClick] = useState(false);

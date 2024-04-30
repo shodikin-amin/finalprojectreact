@@ -1,3 +1,5 @@
+import React from "react";
+
 const Footer = () => {
   return (
     <footer className="bg-hijau1 flex flex-col md:flex-row justify-between items-center">
