@@ -9,6 +9,7 @@ import BurgerMenu from "./pages/BurgerMenu.jsx";
 import RegisterAccountPage from "./pages/RegisterAccount.jsx";
 import ResetPasswordPage from "./pages/ResetPassword.jsx";
 import HomePageFix from "./pages/HomePage.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
