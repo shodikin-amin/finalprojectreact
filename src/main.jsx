@@ -9,6 +9,7 @@ import RegisterPage from "./pages/Register.jsx";
 import BurgerMenu from "./pages/BurgerMenu.jsx";
 import RegisterAccountPage from "./pages/RegisterAccount.jsx";
 import ResetPasswordPage from "./pages/ResetPassword.jsx";
+import ProfileLayout from "./layout/ProfileLayout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/menu",
     element: <BurgerMenu />,
+  },
+  {
+    path: "/profile",
+    element: <ProfileLayout />,
   },
 ]);
 
