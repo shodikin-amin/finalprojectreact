@@ -45,7 +45,7 @@ const Nav = () => {
   );
   return (
     <nav>
-      <div className="h-10vh flex justify-between z-50 text-hijau1txt lg:py-5 px-20 py-4">
+      <div className="h-10vh flex justify-between z-50 absolute w-screen bg-hijau1 text-hijau1txt lg:px-20 px-4 py-4">
         <div className="flex items-center flex-0">
           <Link to="/">
             <img
