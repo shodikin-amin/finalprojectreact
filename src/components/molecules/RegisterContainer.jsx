@@ -2,7 +2,7 @@ import React from "react";
 
 const RegisterContainer = () => {
   return (
-    <div className="w-[350px] h-[250px] md:w-[450px] md:h-[600px]">
+    <div className="flex w-[350px] h-[250px] md:w-[450px] md:h-[600px]">
       <img
         src=".\src\assets\img\logo\asqolanlogo.png"
         className="absolute size-20 m-3 md:size-24 md:m-6"

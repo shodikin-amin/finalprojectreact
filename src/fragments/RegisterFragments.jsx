@@ -84,7 +84,7 @@ const RegisterFragments = () => {
   return (
     <>
       {isSuccess ? (
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
           <Result
             status="success"
             title="Pendaftaran Berhasil!"
@@ -101,7 +101,7 @@ const RegisterFragments = () => {
               </p>
         </div>
       ) : (
-        <div className="flex space-x-10">
+        <div className="flex flex-col justify-center items-center gap-10 py-10 my-auto mx-10 lg:flex-row lg:my-auto">
           <RegisterContainer />
           <form className="space-y-6" onSubmit={handleSubmit}>
             <h1 className="flex font-bold text-hijau1 text-2xl text-center md:text-left">
@@ -118,7 +118,7 @@ const RegisterFragments = () => {
                 onChange={handleChange}
               />
             ))}
-            <div className="flex flex-col justify-center space-x-10 px-4 md:px-0">
+            <div className="flex flex-col justify-center space-x-10">
               <IndexButton type="submit" name="Daftar" />
               <p className="pt-2 mt-2 text-center text-sm text-gray-500">
                 atau ke halaman{" "}
