@@ -87,8 +87,13 @@ const Nav = () => {
         </div>
         <div className="flex gap-4">
           {click && content}
-          <button>{click ? <FaSearch /> : <FaSearch size={25} />}</button>
-          <button>{click ? <VscAccount /> : <VscAccount size={25} />}</button>
+          <Link className="flex" to={""}>
+            <button>{click ? <FaSearch /> : <FaSearch size={25} />}</button>
+          </Link>
+
+          <Link className="flex" to={"/login"}>
+            <button>{click ? <VscAccount /> : <VscAccount size={25} />}</button>
+          </Link>
           <button className="block md:hidden transition" onClick={handleClick}>
             {click ? <FaTimes /> : <CiMenuFries size={25} />}
           </button>
