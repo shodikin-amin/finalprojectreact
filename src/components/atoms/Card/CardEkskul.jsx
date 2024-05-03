@@ -6,7 +6,7 @@ const CardEkskul = ({item}) => {
     <div className='container p-10'>
       <div className='row justify-content-center'>
         {item.map((val) => (
-          <div key={val.id} className='flex mb-7 gap-7'>
+          <div key={val.id} className='flex mb-10 gap-7'>
             <div className='rounded-lg w-1/4'>
               <img src={val.img1} alt='image container' className='h-80 rounded-lg object-cover object-center'/>
             </div>
