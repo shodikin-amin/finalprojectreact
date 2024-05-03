@@ -5,6 +5,7 @@ import VisiMisiContainer from '../components/molecules/VisiMisiContainer'
 const ProfileLayout = () => {
   return (
     <div>
+      <DaftarGuruContainer/>
       <VisiMisiContainer/>
       <EkskulContainer/>
     </div>
