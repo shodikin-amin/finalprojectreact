@@ -1,8 +1,43 @@
 import React from 'react';
 
 const DaftarGuruContainer = () => {
+  const gurus = [
+    {
+      nama: 'Imam Fauzi, S.Pd.',
+      mapel: 'Matematika & IPA',
+    },
+    {
+      nama: 'Yusrina Rahmatillah, S.S.',
+      mapel: 'Bahasa Inggris',
+    },
+    {
+      nama: 'Rina Andriani, S.Tr.S.',
+      mapel: 'IPS & Seni Budaya',
+    },
+    {
+      nama: 'Laeli Ramadhaniati, S.Pd.',
+      mapel: 'Bahasa Indonesia & Prakarya',
+    },
+    {
+      nama: 'Muhammad Ma\'shum',
+      mapel: 'Tahfidz',
+    },
+    {
+      nama: 'Arief Zaki',
+      mapel: 'Fiqih & Hadist',
+    },
+    {
+      nama: 'Alfiansyah. S.H.',
+      mapel: 'Bahasa Arab',
+    },
+    {
+      nama: 'Ahlil Mubarok, S.Pd.',
+      mapel: 'Fiqih & Hadist1',
+    },
+  ];
+
   return (
-    <div className="tblGuru">
+    <div className="container">
       <h2 className="text-center font-bold text-2xl text-white mb-4">Daftar Guru</h2>
       <table className="w-full bg-[#006666] rounded-lg overflow-hidden">
         <thead>
@@ -12,38 +47,12 @@ const DaftarGuruContainer = () => {
           </tr>
         </thead>
         <tbody>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Imam Fauzi, S.Pd.</td>
-            <td className="py-3 px-4">Matematika & IPA</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Yusrina Rahmatillah, S.S.</td>
-            <td className="py-3 px-4">Bahasa Inggris</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Rina Andriani, S.Tr.S.</td>
-            <td className="py-3 px-4">IPS & Seni Budaya</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Laeli Ramadhaniati, S.Pd.</td>
-            <td className="py-3 px-4">Bahasa Indonesia & Prakarya</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Muhammad Ma'shum</td>
-            <td className="py-3 px-4">Tahfidz</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Arief Zaki</td>
-            <td className="py-3 px-4">Fiqih & Hadist</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Alfiansyah. S.H.</td>
-            <td className="py-3 px-4">Bahasa Arab</td>
-          </tr>
-          <tr className="bg-white text-gray-700">
-            <td className="py-3 px-4">Ahlil Mubarok, S.Pd.</td>
-            <td className="py-3 px-4">Fiqih & Hadist</td>
-          </tr>
+          {gurus.map((guru) => (
+            <tr key={guru.nama} className="bg-white text-gray-700">
+              <td className="py-3 px-4">{guru.nama}</td>
+              <td className="py-3 px-4">{guru.mapel}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
