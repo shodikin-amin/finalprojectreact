@@ -30,7 +30,7 @@ const Nav = () => {
           <Link spy={true} smooth={true} to="/profile">
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               {" "}
-              Profil
+              Profile
             </li>
           </Link>
           <Link spy={true} smooth={true} to="/pendaftaran">
@@ -73,7 +73,7 @@ const Nav = () => {
               <Link spy={true} smooth={true} to="/profile">
                 <li className="hover:text-hovertxt transition hover:border-b-2 border-primetxt hover:border-hovertxt hover:font-medium cursor-pointer">
                   {" "}
-                  Profil
+                  Profile
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="/pendaftaran">
