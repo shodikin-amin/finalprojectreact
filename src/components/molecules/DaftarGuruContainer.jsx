@@ -49,8 +49,8 @@ const DaftarGuruContainer = () => {
         <tbody>
           {gurus.map((guru) => (
             <tr key={guru.nama} className="bg-white text-gray-700">
-              <td className="py-3 px-4">{guru.nama}</td>
-              <td className="py-3 px-4">{guru.mapel}</td>
+              <td className="py-3 px-10">{guru.nama}</td>
+              <td className="py-3 px-10">{guru.mapel}</td>
             </tr>
           ))}
         </tbody>
