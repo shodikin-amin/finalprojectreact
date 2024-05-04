@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 const CardEkskul = ({item}) => {
   const [showMore, setShowMore] = useState(false)
+  const [selectedItem, setSelectedItem] = useState(0)
 
   return (
     <div className='container p-10'>
@@ -23,9 +24,15 @@ const CardEkskul = ({item}) => {
                 </div>
               </div>
               <div className='flex justify-between mt-3'>
-                <img src={val.img1} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
-                <img src={val.img2} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
-                <img src={val.img3} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
+                <div className='hover:scale-105 hover:border-[#006666] hover:border-2 hover:rounded-lg'>
+                  <img src={val.img1} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
+                </div>
+                <div className='hover:scale-105 hover:border-[#006666] hover:border-2 hover:rounded-lg'>
+                  <img src={val.img2} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
+                </div>
+                <div className='hover:scale-105 hover:border-[#006666] hover:border-2 hover:rounded-lg'>
+                  <img src={val.img3} alt='image container' className='h-40 w-52 object-cover object-center rounded-lg'/>
+                </div>
               </div>
             </div>
           </div>

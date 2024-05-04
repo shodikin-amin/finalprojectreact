@@ -2,9 +2,9 @@ import React from 'react';
 
 const DaftarGuruContainer = () => {
   return (
-    <div className="tblGuru">
-      <h2 className="text-center font-bold text-2xl text-white mb-4">Daftar Guru</h2>
-      <table className="w-full bg-[#006666] rounded-lg overflow-hidden">
+    <div className="tblGuru p-5">
+      <h2 className="text-center font-bold text-3xl mb-4">Daftar Guru</h2>
+      <table className="w-full bg-[#006666] rounded-lg overflow-hidden border-solid border-2">
         <thead>
           <tr>
             <th className="py-2 px-4 bg-[#004d4d] text-white uppercase font-semibold text-sm">Nama</th>
