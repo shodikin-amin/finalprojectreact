@@ -8,13 +8,15 @@ import EkskulHomeCont from '../components/molecules/EkskulHomeCont'
 const HomepageLayout = () => {
   return (
     <div>
-      <Nav/>
+      <div className="absolute">
+        <Nav />
+      </div>
       <Hero/>
       <ProfileHome/>
       <EkskulHomeCont/>
       <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default HomepageLayout
+export default HomepageLayout;
