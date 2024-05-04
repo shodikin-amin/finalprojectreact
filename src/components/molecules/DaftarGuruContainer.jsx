@@ -38,7 +38,7 @@ const DaftarGuruContainer = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center font-bold text-2xl text-white mb-4">Daftar Guru</h2>
+      <h2 className="text-center font-bold text-2xl text-hijau1 my-4">Daftar Guru</h2>
       <table className="w-full bg-[#006666] rounded-lg overflow-hidden">
         <thead>
           <tr>
